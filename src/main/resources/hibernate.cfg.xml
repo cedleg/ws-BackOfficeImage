@@ -1,0 +1,15 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">buzz009</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/BackOfficeImage</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hbm2ddl.auto">create</property>
+        <property name="show_sql">true</property>
+        <mapping class="model.Project"></mapping>
+        <mapping class="model.Format"></mapping>
+        <mapping class="model.Image"></mapping>
+    </session-factory>
+</hibernate-configuration>
